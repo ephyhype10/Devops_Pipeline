@@ -1,6 +1,8 @@
 
-user_input = input("Enter an expression: ")
+import ast
 
-result = eval(user_input)
+user_input = input("Enter a value: ")
+
+result = ast.literal_eval(user_input)
 
 print("Result:", result)
